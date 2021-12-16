@@ -26,9 +26,9 @@ static genesis(){
 static mineBlock(lastBlock,data){ // weitere Blocks in der Chain
     const timestamp = Date.now(); // Zeit im ms seit 01.01.1970
     const lastHash = lastBlock.hash;
-    const hash = "toDo HASH";
+    const hash = Block.hash(timestamp,lastHash,data);
 
-    return new this(timestamp,lastHash,hash,data);
+    return new this(timestamp,lastHash,hash,data); // call constructor
 }
     
 static hash(timestamp,lastHash,data){ // Erzeugen des HASH
