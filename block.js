@@ -17,6 +17,12 @@ toString(){ // für Debugging ...
     `;
 }
 
+static genesis(){
+    return new this("Genesis time","----","abcd#123",[]);
+}
+
+
+
 }
 
 module.exports = Block;
