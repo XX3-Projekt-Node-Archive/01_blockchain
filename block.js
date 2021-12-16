@@ -13,8 +13,8 @@ constructor(timestamp, lastHash, hash, data){
 toString(){ // für Debugging ...
     return ` Block -
         Timestamp:  ${this.timestamp}
-        Last Hash:  ${this.lastHash}
-        Hash:       ${this.hash}
+        Last Hash:  ${this.lastHash.substring(0,20)}
+        Hash:       ${this.hash.substring(0,20)}
         Data:       ${this.data} 
     `;
 }
