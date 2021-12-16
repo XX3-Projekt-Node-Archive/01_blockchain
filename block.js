@@ -1,3 +1,5 @@
+const SHA256 = require("crypto-js/sha256");
+
 class Block{
 
 // Konstruktor + Parameter
@@ -29,7 +31,9 @@ static mineBlock(lastBlock,data){ // weitere Blocks in der Chain
     return new this(timestamp,lastHash,hash,data);
 }
     
-
+static hash(timestamp,lastHash,data){ // Erzeugen des HASH
+    return SHA256(`${timestamp}${lastHash}${data}`).toString();
+}
 
 
 

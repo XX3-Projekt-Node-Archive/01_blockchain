@@ -20,5 +20,8 @@
   "homepage": "https://github.com/03-Projekt-Node/01_blockchain#readme",
   "devDependencies": {
     "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1"
   }
 }
