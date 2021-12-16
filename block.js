@@ -21,6 +21,17 @@ static genesis(){
     return new this("Genesis time","----","abcd#123",[]);
 }
 
+static mineBlock(lastBlock,data){ // weitere Blocks in der Chain
+    const timestamp = Date.now(); // Zeit im ms seit 01.01.1970
+    const lastHash = lastBlock.hash;
+    const hash = "toDo HASH";
+
+    return new this(timestamp,lastHash,hash,data);
+}
+    
+
+
+
 
 
 }
